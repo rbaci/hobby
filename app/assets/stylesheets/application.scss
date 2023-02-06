@@ -10,6 +10,13 @@
 // Partials - main css files
 @import "partials/*";
 @import "partials/layout/*";
+
+// Variables
+@import "base/variables";
+
+// Default styles
+@import "base/default";
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
