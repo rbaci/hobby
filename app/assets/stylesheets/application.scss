@@ -4,18 +4,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// Variables
-@import "base/variables";
-
 // Partials - main css files
 @import "partials/*";
-@import "partials/layout/*";
 
 // Variables
 @import "base/variables";
 
 // Default styles
 @import "base/default";
+
+// Media queries for a responsive design
+@import "responsive/*";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
