@@ -18,6 +18,7 @@ gem 'sass-rails', '>= 3.2'
 gem 'jquery-rails'
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
+gem 'bootstrap_form'
 gem 'devise'
 # Use Sass to process CSS
 # gem "sassc-rails"
