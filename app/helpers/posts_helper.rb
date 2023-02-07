@@ -15,7 +15,9 @@ module PostsHelper
     end
   end
 
-  def all_categories_button_partial_path
+
+
+def all_categories_button_partial_path
     if params[:category].blank?
       'posts/branch/categories/all_selected'
     else
@@ -29,5 +31,13 @@ module PostsHelper
 
   def post_format_partial_path
     current_page?(root_path) ? 'posts/post/home_page' : 'posts/post/branch_page'
+  end
+
+  def update_pagination_partial_path
+    if @posts.next_page
+      'posts/posts_pagination_page/update_pagination'
+    else
+      'posts/posts_pagination_page/remove_pagination'
+    end
   end
 end
