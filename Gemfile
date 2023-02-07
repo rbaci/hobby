@@ -21,6 +21,7 @@ gem "bootsnap", require: false
 gem 'bootstrap_form'
 gem 'devise'
 gem 'faker'
+gem 'will_paginate'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
