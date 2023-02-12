@@ -22,6 +22,7 @@ gem 'bootstrap_form'
 gem 'devise'
 gem 'faker'
 gem 'will_paginate', '~> 3.3'
+gem 'gon'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
