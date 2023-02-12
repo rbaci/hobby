@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => {:registrations => "registrations"}
   root to: 'pages#index'
   resources :contacts, only: [:create, :update, :destroy]
-  
+
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
   end
@@ -28,6 +28,16 @@ Rails.application.routes.draw do
     end
     resources :messages, only: [:index, :create]
   end
+
+  namespace :group do
+  resources :conversations do
+    member do
+      post :close
+      post :open
+    end
+  end
+  resources :messages, only: [:index, :create]
+end
 end
 
 
