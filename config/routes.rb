@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   root to: 'pages#index'
   resources :contacts, only: [:create, :update, :destroy]
 
+  get 'messenger', to: 'messengers#index'
+  get 'get_private_conversation', to: 'messengers#get_private_conversation'
+  get 'get_group_conversation', to: 'messengers#get_group_conversation'
+  get 'open_messenger', to: 'messengers#open_messenger'
+
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
   end
@@ -38,6 +43,8 @@ Rails.application.routes.draw do
   end
   resources :messages, only: [:index, :create]
 end
+
+
 end
 
 
